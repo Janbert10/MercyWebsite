@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="contanier">
+        <div class="hero">
+            <nav>
+                <a href="#" class="logo">Mercy Flor</a> 
+                <div class="nav-links">
+                    <button id="home-link">home</button>
+                    <button id="about-link">about</button>
+                    <button id="portfolio-link">portfolio</button>
+                    <button id="services-link">services</button>
+                    <button id="contact-link">contact</button>
+                </div>
+                
+            </nav>
+            
+            <div class="content">
+                <div class="div-text">
+                    <h1>Hello, It's me Mercy Flor.</h1>
+                    <h4>Anime Lover</h4>
+                    <p id="dynamic-text"> Passionate about crafting innovative solutions and pushing the boundaries of technology to create meaningful experiences. </p>
+                        
+                </div>
+
+                <div class="div-img">
+                    <img src="mercy2.png" alt="">
+                </div>
+            </div>
+
+            <div class="soc-link">
+                <a href="https://www.facebook.com/miamercy.flor/" class="soc-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="mailto:flormercy246@gmail@gmail.com" class="soc-icon"><i class="fa-brands fa-google"></i></a>
+                <a href="https://www.instagram.com/mercycuerda/?igsh=MWVweWhnemxvbXo3cw%3D%3D&fbclid=IwAR2gu7soVIdMYifW5tBLXfs7KQIaaErGQwQjORhQxi5POVdN2aO_WFX0Nvc" class="soc-icon"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@mhee_01?_r=1&_d=dm8i2i9gic8gej&sec_uid=MS4wLjABAAAArfuVkAy7RpZINFp8FrBdRTo9bO63d7PmYaAJDjMRvV56r_e6htZLXwtT655PbIKr&share_author_id=7023579271794050049&sharer_language=en&source=h5_t&u_code=dm8i291il2kfhf&timestamp=1711115739&user_id=7042966911253316609&sec_user_id=MS4wLjABAAAAXo0gyeU_IKhlT-c0GFArlbA8dzQwEnp-BO2yv17nhjWoHTfA_h605GSPk79zh05C&utm_source=copy&utm_campaign=client_share&utm_medium=android&share_iid=7348344722962614022&share_link_id=631f164f-11b7-4db9-ad0d-c2d5f818b1b9&share_app_id=1180&ugbiz_name=ACCOUNT&ug_btm=b7360%2Cb5836&social_share_type=5&enable_checksum=1&fbclid=IwAR1321hcAStvHj-L9lbXyRB_kCNqpFFK54p_jdCzHlo1oCnYDlKYyWCVDaE" class="soc-icon"><i class="fa-brands fa-tiktok"></i></a>
+            </div>
+            
+        </div>         
+    </div>
+
+    <!-- JavaScript -->
+    <script>
+        // Get elements
+        const homeLink = document.getElementById('home-link');
+        const aboutLink = document.getElementById('about-link');
+        const portfolioLink = document.getElementById('portfolio-link');
+        const servicesLink = document.getElementById('services-link');
+        const contactLink = document.getElementById('contact-link');
+        const dynamicText = document.getElementById('dynamic-text');
+
+        homeLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            dynamicText.textContent = "Passionate about crafting innovative solutions and pushing the boundaries of technology to create meaningful experiences.";
+        });
+
+        aboutLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            dynamicText.textContent = "My name is Me­rcy Flor. I'm a 20-year-old student who loves anime­ and is inspired by the creativity and de­dication of others. I was born on March 1, 2004, in Polanco, Zamboanga del Norte, and I'm curre­ntly in my second year of a BSCS program.";
+        });
+
+        portfolioLink.addEventListener('click', function(event) {
+    event.preventDefault();
+    dynamicText.textContent = "I’m Mercy Flor who loves anime ";
+    dynamicText.innerHTML += "<br><strong>Favorite Anime:</strong>";
+    dynamicText.innerHTML += "<br><a href='https://click.justwatch.com/a?uct_web_app_version=3.8.2-webapp%23cd0945c&r=https%3A%2F%2Fwww.justwatch.com%2Fus%2Fmovie%2Fattack-on-titan&cx=eyJzY2hlbWEiOiJpZ2x1OmNvbS5zbm93cGxvd2FuYWx5dGljcy5zbm93cGxvdy9jb250ZXh0cy9qc29uc2NoZW1hLzEtMC0wIiwiZGF0YSI6W3sic2NoZW1hIjoiaWdsdTpjb20uanVzdHdhdGNoL3RpdGxlX2NvbnRleHQvanNvbnNjaGVtYS8xLTEtMCIsImRhdGEiOnsidGl0bGVJZCI6MTQwODQ1LCJvYmplY3RUeXBlIjoibW92aWUiLCJqd0VudGl0eUlkIjoidG0xNDA4NDUifX1dfQ&utm_source=share&utm_medium=web' target='_blank'><img class='portfolio-image' src='titan.jpg' alt='Attack on Titan Image' style='margin-right: 20px; border-radius: 10px; border: 2px solid #fff;'></a>";
+    dynamicText.innerHTML += "<a href='https://www.imdb.com/title/tt0388629/?ref_=ext_shr_lnk' target='_blank'><img class='portfolio-image' src='onepiece.jpg' width='125px' height='180px' alt='One Piece' style='margin-right: 20px; border-radius: 10px; border: 2px solid #fff;'></a>";
+    dynamicText.innerHTML += "<a href='https://www.imdb.com/title/tt12343534/?ref_=ext_shr_lnk' target='_blank'><img class='portfolio-image' src='jujutsu.jpeg' width='130px' height='180px' alt='jujutsu' style='margin-right: 20px; border-radius: 10px; border: 2px solid #fff;'></a>";
+    dynamicText.innerHTML += "<a href='https://www.imdb.com/title/tt5311514/?ref_=ext_shr_lnk' target='_blank'><img class='portfolio-image' src='your name.jpg' width='125px' height='180px' alt='your name' style='margin-right: 20px; border-radius: 10px; border: 2px solid #fff;'></a>";
+});
+
+
+
+        servicesLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            dynamicText.textContent = "Character Design, Fan Art, Character Design, ";
+        });
+
+        contactLink.addEventListener('click', function(event) {
+            event.preventDefault();
+            dynamicText.textContent = "Globe#: 09065488204";
+            dynamicText.innerHTML += "<br>Gmail: flormercy246@gmail.com";
+        });
+    </script>
+</body> 
+</html>
